@@ -5,9 +5,11 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha --timeout 5000"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
